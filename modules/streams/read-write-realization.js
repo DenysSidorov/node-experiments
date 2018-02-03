@@ -12,8 +12,8 @@ class MyWritable extends Writable {
 let count = 0;
 
 class MyReadable extends Readable {
-    _read() {
-
+    _read(ff) {
+console.log(ff,'ff');
 
         setTimeout(() => {
             console.log('START READ');
